@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <PackageId>Nerest.EntityFrameworkToEFCore</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <Authors>Mikhail Skirukha</Authors>
     <TargetFramework>net7.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
