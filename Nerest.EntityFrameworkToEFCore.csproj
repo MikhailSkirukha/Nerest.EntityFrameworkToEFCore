@@ -2,9 +2,9 @@
 
   <PropertyGroup>
     <PackageId>Nerest.EntityFrameworkToEFCore</PackageId>
-    <Version>1.0.2</Version>
+    <Version>1.0.4</Version>
     <Authors>Mikhail Skirukha</Authors>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <RepositoryType>git</RepositoryType>
@@ -12,11 +12,31 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Entity Framework to Entity Framework Core Translation Extensions</Title>
     <Description>This tool will be helpful in order to create generic repositories accepting list of "include" expressions with nested "selects". By default this approach work only for Entity Framework but not for EF Core which requires "includes" and "thenIncludes". The tool translates the "EF-like" syntax to the EF Core in runtime and allows to make your BLL code abstract from the EF Core. Especially helpful for those who migrate their projects from EF to EF Core</Description>
-    <PackageTags>EFCore, nested include, nesting include, nested select, generic repository, Entity Framework, Entity Framework Core, translate, migrate, nerest</PackageTags>
+    <PackageTags>EF, EFCore, nested, include, nesting, select, generic, repository, EntityFramework, EntityFrameworkCore, translate, migrate, nerest</PackageTags>
+    <Copyright>Copyright (c) Mikhail Skirukha</Copyright>
+    <PackageProjectUrl>https://github.com/MikhailSkirukha/Nerest.EntityFrameworkToEFCore</PackageProjectUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
