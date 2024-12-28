@@ -2,9 +2,9 @@
 
   <PropertyGroup>
     <PackageId>Nerest.EntityFrameworkToEFCore</PackageId>
-    <Version>1.0.4</Version>
+    <Version>2.0.0</Version>
     <Authors>Mikhail Skirukha</Authors>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net9.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <RepositoryType>git</RepositoryType>
@@ -21,7 +21,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.0" />
   </ItemGroup>
 
   <ItemGroup>
